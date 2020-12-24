@@ -21,5 +21,17 @@ class EntriesTableSeeder extends Seeder
             'created_at'=>date('Y-m-d H:i:s'),
             'updated_at'=>date('Y-m-d H:i:s')
         ]);
+        DB::table('entries')->insert([
+            'title'=>'entry02',
+            'content'=>'Good Morning',
+            'created_at'=>date('Y-m-d H:i:s'),
+            'updated_at'=>date('Y-m-d H:i:s')
+        ]);
+        DB::table('entries')->insert([
+            'title'=>'entry03',
+            'content'=>'Good Evening',
+            'created_at'=>date('Y-m-d H:i:s'),
+            'updated_at'=>date('Y-m-d H:i:s')
+        ]);
     }
 }
